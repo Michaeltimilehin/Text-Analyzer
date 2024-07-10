@@ -120,7 +120,6 @@ body {
   position: relative;
   display: inline-block;
   padding: 35px;
-  text-transform: uppercase;
   letter-spacing: 4px;
   color: #03e9f4;
   font-size: 1.2rem;
@@ -136,7 +135,7 @@ body {
   margin: 30px auto;
   width: 1200px;
   height: 600px;
-  box-shadow: 0 0 25px 2px #03e9f4;
+  box-shadow: 0 0 25px 2px darkgrey;
   border-radius: 20px;
 
 }
@@ -148,7 +147,7 @@ body {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 } */
 
-.wrapper span {
+/* .wrapper span {
   position: absolute;
   display: block;
 
@@ -230,7 +229,7 @@ body {
   100% {
     bottom: 100%;
   }
-}
+} */
 
 
 /* textarea{
@@ -274,10 +273,9 @@ body {
   padding: 10px 10px;
   font-size: 20px;
   font-weight: 700;
-  color: rgb(10, 75, 24);
+  color: black;
   background-color: rgb(238, 235, 235);
   border-radius: 20px;
-  font-style: italic;
 }
 
 .final {
