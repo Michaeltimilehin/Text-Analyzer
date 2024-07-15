@@ -18,24 +18,45 @@
       <span></span>
       <span></span>
       <span></span>
-      TEXT-ANALYZER
+      
     </div>
-    <main class="wrapper">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <div class="text">
-        <textarea id="message" rows="8" placeholder="Type something here..."></textarea>
-      </div>
-      <div class="final">
-        <p>Total Word Count : <span></span></p>
-        <p>Total Word Occurence : <span></span></p>
-        <p>Word Occurence : <span></span></p>
-      </div>
-      <div class="sure">
-        <p>Top three words</p>
-        <div class="top"></div>
+    <main class="link">
+      <form spellcheck="false">
+        <textarea id="userText" placeholder="Enter text here ..."></textarea>
+        <div class="btn-group">
+          <button class="btn" type="submit">
+            Analyze
+          </button>
+
+          <div class="space"></div>
+
+          <button type="reset" class="btn">
+            Clear All
+          </button>
+        </div>
+      </form>
+
+      <div class="analysis">
+        <h2>Analysis</h2>
+
+        <div class="all-analysis">
+          <h4>
+            Characters : <span id="characters">
+            </span>
+          </h4>
+          <h4>
+            paragraphs : <span id="paragraphs">0
+            </span>
+          </h4>
+          <h4>
+            symbols : <span id="characters">0
+            </span>
+          </h4>
+          <h4>
+            words : <span id="characters">0
+            </span>
+          </h4>
+        </div>
       </div>
     </main>
   </div>
