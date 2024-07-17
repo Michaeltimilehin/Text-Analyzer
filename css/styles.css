@@ -7,14 +7,13 @@
 }
 
 body{
-  background-color: black;
+  background-color: #d85f5f;
 }
  .wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  background-color: #000;
+  margin-top: 20px;
 }
 
 .a {
@@ -129,7 +128,7 @@ body{
   }
 }
 
-/* h1{
+h1{
   text-align: center;
   padding: 0.68em 0;
   text-shadow: 0 4px 4px rgb(0,0,0,0.25);
@@ -140,6 +139,9 @@ main{
   width: 50%;
   min-width: 30em;
   margin: 0 auto;
+  /* margin-bottom: 30px; */
+  margin-top: 50px;
+  
 }
 
 #userText{
@@ -173,7 +175,7 @@ main{
   font-weight: bold;
   border: none;
   cursor: pointer;
-  transition: 0.3s;
+  transition: 0.5s;
   background-color: #ff7d7d;
   font-size: 1.1em;
   color: #ffcdcd;
@@ -215,4 +217,4 @@ main{
 .all-analysis > h4{
   width: 50%;
   line-height: 2em;
-} */
+}
