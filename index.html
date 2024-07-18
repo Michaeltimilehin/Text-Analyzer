@@ -12,7 +12,9 @@
 </head>
 
 <body>
-  <button id="mark">TEXT-ANALYZER</button>
+  <section class="back">
+    <button id="mark">TEXT-ANALYZER</button>
+  </section>
   <div class="Michael">
     <div class="wrapper">
       <div class="a">
@@ -23,9 +25,9 @@
         Text-Analyzer
       </div>
     </div>
-   
+
     <main class="link">
-      <form spellcheck="false">
+      <div class="form" spellcheck="false">
         <textarea id="userText" placeholder="Enter text here ..."></textarea>
         <div class="btn-group">
           <button class="btn" type="submit">
@@ -38,7 +40,7 @@
             Clear All
           </button>
         </div>
-      </form>
+      </div>
 
       <div class="analysis">
         <h2>Analysis</h2>
@@ -49,7 +51,7 @@
             </span>
           </h4>
           <h4>
-              Word-Occurence: <span id="paragraphs">0
+            Word-Occurence: <span id="paragraphs">0
             </span>
           </h4>
           <h4>
@@ -57,7 +59,7 @@
             </span>
           </h4>
           <h4>
-             Word-Counter: <span id="characters">0
+            Word-Counter: <span id="characters">0
             </span>
           </h4>
         </div>
