@@ -26,11 +26,15 @@
       </div>
     </div>
 
+
     <main class="link">
       <div class="form" spellcheck="false">
+        <input type="text" id="text-to-search" placeholder="Enter text to search..">
+        <button id="search">Search</button>
+
         <textarea id="userText" placeholder="Enter text here ..."></textarea>
         <div class="btn-group">
-          <button class="btn" type="submit">
+          <button class="btn" id="ana">
             Analyze
           </button>
 
@@ -41,26 +45,26 @@
           </button>
         </div>
       </div>
+      <div class="display">
+        <p>Display-Here</p>
+        <p id="textdisplayed">
 
+        </p>
+      </div>
       <div class="analysis">
         <h2>Analysis</h2>
 
         <div class="all-analysis">
-          <h4>
-            Characters : <span id="characters">0
-            </span>
+          <h4 id="paragraphs">
+          Total-Word-Occurence: 0
+          </h4>
+          <h4 id="characters">
+            Total-Word-Counter : 0 
           </h4>
           <h4>
-            Word-Occurence: <span id="paragraphs">0
-            </span>
-          </h4>
-          <h4>
-            Word-Counter : <span id="characters">0
-            </span>
-          </h4>
-          <h4>
-            Word-Counter: <span id="characters">0
-            </span>
+            Top-Three-Words 
+             <p id="three">
+            </p>
           </h4>
         </div>
       </div>

@@ -20,7 +20,7 @@
   padding: 25px 30px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  color: #03e9f4;
+  color: white;
   font-size: 1.2rem;
   font-weight: bold;
   transition: .5s;
@@ -29,19 +29,19 @@
 }
 
 .a:hover {
-  background-color: #03e9f4;
+  background-color: 	#8A2BE2;
   color: #050801;
-  box-shadow: 0 0 5px #03e9f4 0 0 25px #03e9f4 0 0 50px #03e9f4 0 0 200px #03e9f4;
+  box-shadow: 0 0 5px 	#8A2BE2 0 0 25px 	#8A2BE2 0 0 50px 	#8A2BE2 0 0 200px 	#8A2BE2;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
-.a:first-child {
+/* .a:first-child {
   filter: hue-rotate(225deg);
 }
 
 .a:last-child {
   filter: hue-rotate(90deg);
-}
+} */
 
 .a span {
   position: absolute;
@@ -53,7 +53,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, #03e9f4);
+  background: linear-gradient(90deg, transparent, 	#8A2BE2);
   animation: animate1 1s infinite;
 }
 
@@ -72,7 +72,7 @@
   right: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, #03e9f4);
+  background: linear-gradient(180deg, transparent, 	#8A2BE2);
   animation: animate2 1s infinite;
   animation-delay: .25s;
 }
@@ -92,7 +92,7 @@
   right: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(270deg, transparent, #03e9f4);
+  background: linear-gradient(270deg, transparent, 	#8A2BE2);
   animation: animate3 1s infinite;
   animation-delay: .5s;
 }
@@ -112,7 +112,7 @@
   left: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, #03e9f4);
+  background: linear-gradient(360deg, transparent, 	#8A2BE2);
   animation: animate4 1s infinite;
 }
 
@@ -128,14 +128,11 @@
 .back{
   background-image: url(../img/pexels-infonautica-2690766.jpg);
   background-size: cover;
-  height: 645px;
- 
+  height: 640px;
 }
 #mark {
- 
   margin-top: 50vh;
-  margin-left: 90vh;
-  
+  margin-left: 90vh;  
   --glow-color:rgb(217,176,255);
   --glow-spread-color: rgba(191,123,255,0.781);
   --enhanced-glow-color: rgb(231,206,255);
@@ -157,6 +154,7 @@
   transition: all 0.3s;
 
 }
+
 #mark::after{
   pointer-events: none;
   content: "";
@@ -165,14 +163,14 @@
   left: 0;
   height: 100%;
   width: 100%;
- 
-
 }
+
 #mark:hover {
   color: var(--btn-color);
   background-color: var(--glow-color);
   box-shadow: 0 0 1em .25em var (--glow-color), 0 0 4em 2em var (--glow-spread-color), inset 0 0 .75em .25em var(--glow-color);
 }
+
 #mark:active {
   box-shadow: 0 0 0 0.6em .25em var (--glow-color),
     0 0 2.5em 2em var (--glow-spread-color),
@@ -192,7 +190,7 @@ main {
 }
 
 .Michael {
-  background-color: 	#8A2BE2;
+  background-color: 	#4B0082;
   margin-top: 0;
   display: none;
 }
@@ -213,6 +211,35 @@ main {
   border: none;
   resize: none;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+#text-to-search{
+  height: 13%;
+  width: 30%;
+  margin-bottom: 10px;
+  margin-top: 10px ;
+  padding: 10px 5px;
+  border-radius: 3px;
+  border: 1px solid #C7CAF5;
+}
+
+#search{
+  height: 50px;
+  width: 100px;
+  background-color: #C7CAF5;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #ffffff;
+  border-radius: 3px;
+}
+
+#three{
+  color: #4B0082;
+  font-weight: 700;
+  background: white;
+  padding: 0.1em 1rem;
+  border-radius: 25px;
+  margin-left: 1.4rem;
 }
 
 #userText::placeholder {
@@ -250,10 +277,24 @@ main {
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.analysis {
+.display{
   border-top: 10px solid 	#8A2BE2;
   width: 50%;
+  height: 80%;
+  padding-right: 40px;
+  margin-bottom: 30px;
+  padding: 1rem;
   margin: 0 auto;
+  background-color: 	#9370DB;
+  box-shadow: inset -1px 0 4px rgba(0, 0, 0, 0.25);
+ 
+}
+.analysis { 
+  padding-bottom: 20px;
+  border-top: 10px solid 	#8A2BE2;
+  width: 50%;
+  padding-right: 40px;
+  margin:30px auto;
   background-color: 	#9370DB;
   box-shadow: inset -1px 0 4px rgba(0, 0, 0, 0.25);
   transform: translate(-1050px);
@@ -263,15 +304,16 @@ main {
 @keyframes slidein {
   to {
     transform: translate(0);
-  }
+  }  
 }
 
 .analysis>h2 {
   margin: 1em 0;
   text-align: center;
-  font-size: 1.5em;
-  text-transform: uppercase;
+  font-size: 900;
+  text-transform: uppercase ;
   color: #3e3e3e;
+
 }
 
 .all-analysis {

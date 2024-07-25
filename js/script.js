@@ -1,12 +1,6 @@
-$(document).ready(function () {
-  $("#mark").click(function () {
-    $( ".Michael").show()
-    $("#mark").hide()
-    $(".back").hide()
-  })
-})
 
-function noInputtedWord() { 
+//UTILITY FUNCTION
+function noInputtedWord() {
   for (let i = 0; i < arguments.length; i++) {
     if (arguments[i].trim().length === 0) {
       return true;
@@ -18,7 +12,7 @@ function noInputtedWord() {
 //BUSINESS LOGIC
 function wordCounter(text) {
   if (noInputtedWord(text)) {
-    return 0;
+     return 0;
   }
   let wordCount = 0;
   const textArray = text.split(" ");
@@ -139,26 +133,35 @@ function topThree(sentence) {
 }
 
 
-
 //UI
-let myText = document.getElementById("my-text");
-let searchButton = document.getElementById("search");
-let maskedSentence;
-myText.addEventListener("input", () => {
-  let count = wordCounter(myText.value);
-  maskedSentence = maskBadWords(myText.value)
-  document.getElementById("text-display").innerHTML = maskedSentence;
-  document.getElementById("count-result").textContent = `Total  Word Count: ${count}`;
-  document.getElementById("topThree").innerHTML = topThree(myText.value);
-});
-searchButton.addEventListener("click", () => {
-  let textToSearch = document.getElementById("text-to-search").value;
-  if (noInputtedWord(textToSearch)) {
-    return;
-  }
-  maskedSentence = maskBadWords(myText.value)
-  let searchSentence = wordSearch(textToSearch, maskedSentence);
-  document.getElementById("text-display").innerHTML = searchSentence
-  let wordCount = numberOfOccurrencesInText(textToSearch, myText.value);
-  document.getElementById("occurence-result").textContent = `Total  Word Occurence: ${wordCount}`;
-});
+$(document).ready(function () {
+  $("#mark").click(function () {
+    $( ".Michael").show()
+    $("#mark").hide()
+    $(".back").hide()
+  })
+
+  let myText = document.getElementById("userText");
+  let searchButton2 = document.getElementById("ana");
+  let searchButton = document.getElementById("search");
+  let maskedSentence;
+  searchButton2.addEventListener("click", () => {
+    let count = wordCounter(myText.value);
+    maskedSentence = maskBadWords(myText.value)
+    document.getElementById("textdisplayed").innerHTML = maskedSentence;
+    document.getElementById("characters").textContent = `Total  Word Count: ${count}`;
+    document.getElementById("three").innerHTML = topThree(myText.value);
+  });
+  searchButton.addEventListener("click", () => {
+    console.log("clicked")
+    let textToSearch = document.getElementById("text-to-search").value;
+    if (noInputtedWord(textToSearch)) {
+      return;
+    }
+    maskedSentence = maskBadWords(myText.value)
+    let searchSentence = wordSearch(textToSearch, maskedSentence);
+    document.getElementById("textdisplayed").innerHTML = searchSentence
+    let wordCount = numberOfOccurrencesInText(textToSearch, myText.value);
+    document.getElementById("paragraphs").textContent = `Total  Word Occurence: ${wordCount}`;
+  });
+})
