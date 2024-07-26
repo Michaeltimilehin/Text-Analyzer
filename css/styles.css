@@ -29,9 +29,9 @@
 }
 
 .a:hover {
-  background-color: 	#8A2BE2;
+  background-color: 			#9400D3;
   color: #050801;
-  box-shadow: 0 0 5px 	#8A2BE2 0 0 25px 	#8A2BE2 0 0 50px 	#8A2BE2 0 0 200px 	#8A2BE2;
+  box-shadow: 0 0 5px 			#9400D3 0 0 25px 			#9400D3 0 0 50px 			#9400D3 0 0 200px 			#9400D3;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
@@ -53,7 +53,7 @@
   left: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, 	#8A2BE2);
+  background: linear-gradient(90deg, transparent,#9400D3);
   animation: animate1 1s infinite;
 }
 
@@ -72,7 +72,7 @@
   right: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(180deg, transparent, 	#8A2BE2);
+  background: linear-gradient(180deg, transparent, 			#9400D3);
   animation: animate2 1s infinite;
   animation-delay: .25s;
 }
@@ -92,7 +92,7 @@
   right: 0;
   width: 100%;
   height: 1px;
-  background: linear-gradient(270deg, transparent, 	#8A2BE2);
+  background: linear-gradient(270deg, transparent, 			#9400D3);
   animation: animate3 1s infinite;
   animation-delay: .5s;
 }
@@ -112,7 +112,7 @@
   left: 0;
   width: 1px;
   height: 100%;
-  background: linear-gradient(360deg, transparent, 	#8A2BE2);
+  background: linear-gradient(360deg, transparent, 			#9400D3);
   animation: animate4 1s infinite;
 }
 
@@ -128,7 +128,7 @@
 .back{
   background-image: url(../img/pexels-infonautica-2690766.jpg);
   background-size: cover;
-  height: 640px;
+  height: 690px;
 }
 #mark {
   margin-top: 50vh;
@@ -212,25 +212,64 @@ main {
   resize: none;
   box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
 }
-#text-to-search{
-  height: 13%;
-  width: 30%;
-  margin-bottom: 10px;
-  margin-top: 10px ;
-  padding: 10px 5px;
-  border-radius: 3px;
-  border: 1px solid #C7CAF5;
+.input-field{
+ margin-left: 450px;
+ margin-top: 25px;
+  position: relative;
+}
+
+.input-field input{
+  width: 350px;
+  height: 60px;
+  border-radius: 6px;
+  font-size: 20px;
+  padding-left: 15px;
+  border: 2px solid #fff;
+  background: transparent;
+  outline: none;
+  color: #fff;
+}
+
+.input-field label{
+  position: absolute;
+  top: 45%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 19px;
+  pointer-events: none;
+  transition: .3s;
+}
+
+input:focus{
+  border: 2px solid #1cd679;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+  top: 0;
+  bottom: 1;
+  font-size: 16px;
+  padding: 0 10px;
+  background: #4B0082;
 }
 
 #search{
+  margin-bottom: 10px;
   height: 50px;
   width: 100px;
-  background-color: #C7CAF5;
+  background-color: #8A2BE2;
   border: none;
   outline: none;
   cursor: pointer;
   color: #ffffff;
   border-radius: 3px;
+}
+
+#search:hover{
+  background-color: #9370DB;
+  color: black;
+  transition: .8s;
 }
 
 #three{
